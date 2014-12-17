@@ -35,8 +35,8 @@
 
 <script>
 var margin = {top: 40, right: 20, bottom: 30, left: 60},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    width = 400 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
 var x = d3.scale.ordinal()
     .rangeRoundBands([0, width], .1);
 var y = d3.scale.linear()
@@ -60,7 +60,12 @@ var svg = d3.select(".chart").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 svg.call(tip);
-d3.tsv("data.tsv", function(error, data) {
+
+var data;
+
+d3.json("path/to/file.json", function(error, json) {
+  if (error) return console.warn(error);
+  data = json;
   x.domain(data.map(function(d) { return d.letter; }));
   y.domain([0, d3.max(data, function(d) { return d.value; })]);
   svg.append("g")
