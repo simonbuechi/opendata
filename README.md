@@ -7,7 +7,7 @@ Part I - Time Tracking
 
 Time reporting as easy as possible using Google Calendar, tracking and visualization according to your needs.
 
-* Report your time by adding a item to a Google Calendar. That is the only manual task necessary.
+* Report your time by adding a entry to a Google Calendar. That is the only manual task necessary.
 * Automated tracking in Google Spreadsheet
 * Query your data to your preferred application (e.g. visualizations in D3 or Google Charts)
 
@@ -19,8 +19,11 @@ Time reporting as easy as possible using Google Calendar, tracking and visualiza
 4. Add trigger to script, to run daily during the night (e.g. "2.00-3.00am")
 5. Start tracking your time to your calendar.
 
-**Default format**
-All calendar items must be in this format: [free text, can be empty] [#tag1] [#tag2] [#tag3]. Personally I use [#tag1] for a general category, [#tag2] for the project and [#tag3] to identify the activity.
+**Default format of calendar entry**
+
+All calendar entries must be in this format: 
+```[free text, can be empty] [#tag1] [#tag2] [#tag3]``` 
+Personally I use ```[#tag1]``` for a general category, ```[#tag2]``` for the project and ```[#tag3]``` to identify the activity.
 
 Examples:
 * "Meeting with Max #business #companyXYZ #meeting"
