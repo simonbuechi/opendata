@@ -2,8 +2,6 @@ var ss = SpreadsheetApp.getActiveSpreadsheet();
 var sheet = ss.getActiveSheet();
 var charts = sheet.getCharts();
 var textStyle = Charts.newTextStyle().setColor("ccc").setFontSize(10).setFontName('Arial').build();
-// Color range sequence: 1) Politics 2) Business 3) Private
-//var colorRange = ["#93ce6d","#37abc8","#dc7f7f"];
 var colorRangeMedium = ["#668F4C","#206273","#9C5A5A"]; 
 var colorRangeDark = ["#456133","#194C59","#633939"]; 
 
