@@ -1,5 +1,5 @@
-Simon Buechis Open Data Experiments
-===================================
+Open Data Experiments
+============================
 
 Part I - Time Tracking
 -----------------------
